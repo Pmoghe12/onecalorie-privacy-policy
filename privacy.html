@@ -1,53 +1,237 @@
-Privacy Policy — OneCalorie
-Effective date: April 15, 2026
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Privacy Policy — OneCalorie</title>
+    <meta name="description" content="Privacy Policy for OneCalorie" />
+    <style>
+      :root {
+        --bg: #0b0f1a;
+        --card: rgba(255, 255, 255, 0.06);
+        --text: rgba(255, 255, 255, 0.92);
+        --muted: rgba(255, 255, 255, 0.70);
+        --line: rgba(255, 255, 255, 0.14);
+        --accent: #6ee7ff;
+        --shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+        --radius: 16px;
+      }
 
-OneCalorie (“we”, “our”, “us”) provides a calorie, macro, meal, and water tracking app (“App”). This Privacy Policy explains how we collect, use, and protect your information.
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg: #f6f7fb;
+          --card: rgba(0, 0, 0, 0.04);
+          --text: rgba(0, 0, 0, 0.90);
+          --muted: rgba(0, 0, 0, 0.62);
+          --line: rgba(0, 0, 0, 0.10);
+          --accent: #0066ff;
+          --shadow: 0 12px 40px rgba(0, 0, 0, 0.10);
+        }
+      }
 
-Information We Collect
-Information you provide
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji",
+          "Segoe UI Emoji";
+        color: var(--text);
+        background: radial-gradient(900px 500px at 15% 10%, rgba(110, 231, 255, 0.20), transparent 55%),
+          radial-gradient(900px 500px at 85% 80%, rgba(0, 102, 255, 0.16), transparent 55%),
+          var(--bg);
+        line-height: 1.55;
+      }
 
-Account details: name (optional), email address, and password (if you sign up with email).
-Phone number (if you choose to provide it).
-Profile details for recommendations: sex, date of birth, height, weight, activity level, and goal preferences.
-App content you enter: foods you create, meal collections, food logs, and water logs.
-Automatically collected information
+      a { color: var(--accent); text-decoration: none; }
+      a:hover { text-decoration: underline; }
 
-Basic app/device information needed to run the App (for example, device type, OS version).
-Analytics/crash data may be collected by our service providers.
-Advertising data
+      .wrap {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 28px 16px 44px;
+      }
 
-We show ads using Google AdMob. AdMob may collect device identifiers (such as Advertising ID), IP address, and ad interaction data to serve and measure ads.
-How We Use Your Information
-We use your information to:
+      header {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 18px;
+      }
 
-Create and manage your account (sign-in/sign-out).
-Save your foods, meals, logs, targets, and preferences.
-Show progress, charts, and personalized recommendations.
-Improve app stability and performance.
-Display and measure ads.
-How We Store and Share Information
-We use Firebase Authentication to manage sign-in.
-We use Cloud Firestore (Firebase) to store your app data (foods, logs, profile, targets).
-We may share limited information with service providers (Firebase/Google) to provide the app and ads.
-We do not sell your personal information.
-Ads
-We use Google AdMob to display ads. AdMob’s use of information is governed by Google’s policies. You can limit ad personalization in your device settings.
+      .logo {
+        width: 48px;
+        height: 48px;
+        border-radius: 14px;
+        background: linear-gradient(135deg, rgba(110,231,255,0.30), rgba(0,102,255,0.20));
+        border: 1px solid var(--line);
+        box-shadow: var(--shadow);
+        display: grid;
+        place-items: center;
+        font-weight: 900;
+        letter-spacing: 0.3px;
+      }
 
-Data Retention
-We keep your data while your account is active or as needed to provide the App. You can request deletion at any time.
+      h1 {
+        margin: 0;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.2px;
+      }
 
-Your Choices
-You can update your profile and logs inside the App.
-You can request account/data deletion by contacting us.
-Children’s Privacy
-OneCalorie is not intended for children under 13. If you believe a child has provided personal information, contact us and we will delete it.
+      .sub {
+        margin: 6px 0 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
 
-Security
-We use reasonable security measures and trusted providers (Firebase/Google). No method of transmission or storage is 100% secure.
+      .card {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        padding: 18px 18px;
+        box-shadow: var(--shadow);
+      }
 
-Contact Us
-If you have questions or requests, contact:
+      h2 {
+        margin: 22px 0 10px;
+        font-size: 18px;
+        letter-spacing: 0.2px;
+      }
 
-Email: support.onecalorie@gmail.com
-Changes to This Policy
-We may update this Privacy Policy from time to time. We will update the effective date above.
+      h3 {
+        margin: 14px 0 8px;
+        font-size: 15px;
+        color: var(--text);
+      }
+
+      p { margin: 10px 0; color: var(--text); }
+      ul { margin: 10px 0 0 18px; padding: 0; }
+      li { margin: 6px 0; color: var(--text); }
+
+      .muted { color: var(--muted); }
+      footer {
+        margin-top: 18px;
+        color: var(--muted);
+        font-size: 13px;
+        text-align: center;
+      }
+
+      .pill {
+        display: inline-block;
+        padding: 4px 10px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="logo">1C</div>
+        <div>
+          <h1>Privacy Policy — OneCalorie</h1>
+          <div class="sub">
+            <span class="pill">Effective date: April 15, 2026</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="card">
+        <p>
+          OneCalorie (“we”, “our”, “us”) provides a calorie, macro, meal, and water tracking app (“App”).
+          This Privacy Policy explains how we collect, use, and protect your information.
+        </p>
+
+        <h2>Information We Collect</h2>
+
+        <h3>Information you provide</h3>
+        <ul>
+          <li>Account details: name (optional), email address, and password (if you sign up with email).</li>
+          <li>Phone number (if you choose to provide it).</li>
+          <li>
+            Profile details for recommendations: sex, date of birth, height, weight, activity level, and goal
+            preferences.
+          </li>
+          <li>App content you enter: foods you create, meal collections, food logs, and water logs.</li>
+        </ul>
+
+        <h3>Automatically collected information</h3>
+        <ul>
+          <li>Basic app/device information needed to run the App (for example, device type, OS version).</li>
+          <li>Analytics/crash data may be collected by our service providers.</li>
+        </ul>
+
+        <h3>Advertising data</h3>
+        <ul>
+          <li>
+            We show ads using Google AdMob. AdMob may collect device identifiers (such as Advertising ID), IP
+            address, and ad interaction data to serve and measure ads.
+          </li>
+        </ul>
+
+        <h2>How We Use Your Information</h2>
+        <p>We use your information to:</p>
+        <ul>
+          <li>Create and manage your account (sign-in/sign-out).</li>
+          <li>Save your foods, meals, logs, targets, and preferences.</li>
+          <li>Show progress, charts, and personalized recommendations.</li>
+          <li>Improve app stability and performance.</li>
+          <li>Display and measure ads.</li>
+        </ul>
+
+        <h2>How We Store and Share Information</h2>
+        <ul>
+          <li>We use Firebase Authentication to manage sign-in.</li>
+          <li>We use Cloud Firestore (Firebase) to store your app data (foods, logs, profile, targets).</li>
+          <li>We may share limited information with service providers (Firebase/Google) to provide the App and ads.</li>
+          <li>We do not sell your personal information.</li>
+        </ul>
+
+        <h2>Ads</h2>
+        <p>
+          We use Google AdMob to display ads. AdMob’s use of information is governed by Google’s policies.
+          You can limit ad personalization in your device settings.
+        </p>
+
+        <h2>Data Retention</h2>
+        <p>
+          We keep your data while your account is active or as needed to provide the App. You can request
+          deletion at any time.
+        </p>
+
+        <h2>Your Choices</h2>
+        <ul>
+          <li>You can update your profile and logs inside the App.</li>
+          <li>You can request account/data deletion by contacting us.</li>
+        </ul>
+
+        <h2>Children’s Privacy</h2>
+        <p>
+          OneCalorie is not intended for children under 13. If you believe a child has provided personal
+          information, contact us and we will delete it.
+        </p>
+
+        <h2>Security</h2>
+        <p>
+          We use reasonable security measures and trusted providers (Firebase/Google). No method of
+          transmission or storage is 100% secure.
+        </p>
+
+        <h2>Contact Us</h2>
+        <p>
+          If you have questions or requests, contact:
+          <br />
+          Email:
+          <a href="mailto:support.onecalorie@gmail.com">support.onecalorie@gmail.com</a>
+        </p>
+
+        <h2>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will update the effective date above.</p>
+      </div>
+
+      <footer>© 2026 OneCalorie. All rights reserved.</footer>
+    </div>
+  </body>
+</html>
